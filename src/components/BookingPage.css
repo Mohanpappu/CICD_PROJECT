@@ -1,0 +1,98 @@
+.booking-page {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.trip-info {
+  background-color: #eef5ff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.traveller-section h3 {
+  margin-top: 20px;
+}
+
+.add-btn {
+  background-color: #0077ff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.traveller-form {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.row input {
+  flex: 1;
+  padding: 8px;
+}
+
+.save-btn,
+.continue-btn {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.review-card {
+  background: #f0f4ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.review-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.edit-btn,
+.confirm-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #ffaa00;
+}
+
+.confirm-btn {
+  background-color: #00b34f;
+  color: white;
+}

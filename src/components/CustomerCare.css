@@ -1,0 +1,97 @@
+.customer-care-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Banner */
+.cc-banner {
+  background: #232f3e; /* Amazon dark */
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.cc-banner h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.cc-banner p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+/* Contact Cards */
+.contact-section h2 {
+  margin-bottom: 15px;
+  color: #232f3e;
+}
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+.contact-card h3 {
+  margin-bottom: 8px;
+  color: #232f3e;
+}
+.call-btn {
+  margin-top: 10px;
+  background: #ffa41c; /* Amazon yellow */
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.call-btn:hover {
+  background: #ff8c00;
+}
+
+/* FAQ */
+.faq-section {
+  margin-top: 40px;
+}
+.faq-item {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.faq-item h4 {
+  margin: 0 0 6px;
+  color: #232f3e;
+}
+
+/* Chat */
+.chat-section {
+  margin-top: 40px;
+  text-align: center;
+}
+.chat-btn {
+  background: #007bff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+.chat-btn:hover {
+  background: #0056b3;
+}

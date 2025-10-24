@@ -1,0 +1,150 @@
+.flights-section {
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f9ff;
+}
+
+/* Centered Search Box */
+.flight-search-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-title {
+  text-align: center;
+  color: #0077ff;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.search-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.row input,
+.row select {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.row.single {
+  justify-content: center;
+}
+
+.row.single select {
+  width: 48%;
+}
+
+/* Search Button */
+.search-btn {
+  width: 100%;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #005bcc;
+}
+
+/* ✈ Offers Section */
+.offers-section {
+  text-align: center;
+}
+
+.offers-title {
+  color: #0077ff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Offer cards side by side */
+.offers-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.offer-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+
+.offer-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.offer-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Get Offer Button */
+.offer-btn {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.offer-btn:hover {
+  background-color: #005bcc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .offers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-card {
+    width: 90%;
+  }
+}

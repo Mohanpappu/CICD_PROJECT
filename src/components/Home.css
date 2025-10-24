@@ -1,0 +1,241 @@
+/* Navbar */
+header .navbar {
+  background-color: #131921 !important;
+  padding: 10px 20px;
+}
+
+header .navbar-brand {
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+header .navbar-nav .nav-link {
+  color: #ffffff !important;
+  font-size: 15px;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+header .navbar-nav .nav-link:hover,
+header .navbar-nav .nav-link.active {
+  color: #febd69 !important;
+}
+
+header .dropdown-menu {
+  background-color: #232f3e;
+  border: none;
+  border-radius: 6px;
+}
+
+header .dropdown-menu .dropdown-item {
+  color: #ffffff;
+}
+
+header .dropdown-menu .dropdown-item:hover {
+  background-color: #37475a;
+  color: #febd69;
+}
+
+/* Login & Signup Buttons */
+header .btn-primary,
+.hero-section .btn-primary {
+  background-color: #febd69;
+  border: none;
+  color: #111;
+  font-weight: 600;
+  padding: 6px 15px;
+  border-radius: 6px;
+}
+
+header .btn-primary:hover,
+.hero-section .btn-primary:hover {
+  background-color: #f90;
+  color: #000;
+}
+
+header .btn-secondary {
+  background-color: #37475a;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 6px 15px;
+  border-radius: 6px;
+}
+
+header .btn-secondary:hover {
+  background-color: #232f3e;
+  color: #febd69;
+}
+
+/* Navbar Toggler (Mobile) */
+.navbar-toggler {
+  border-color: #fff;
+}
+
+/* Fix Navbar Always on Top */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Page Background */
+body {
+  padding-top: 70px;
+  background-color: #fff8e1; /* soft yellow */
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;   /* make it full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;           /* remove extra spacing */
+  border-radius: 0;    /* remove curves */
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fill screen properly */
+  z-index: -1;
+}
+
+/* Optional full visibility without crop */
+.background-video.contain {
+  object-fit: contain;
+  background: #000; 
+  background-color: #000;/* fills gaps if aspect ratio differs */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Custom Input */
+.custom-input {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.custom-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Main background */
+main {
+  background: #0f0e0a;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 40px 40px 0 0;
+}
+
+/* Section Spacing & Text */
+section {
+  padding: 40px 0;
+}
+
+main h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #131921;
+}
+
+.card-text,
+.text-muted {
+  font-size: 14px;
+}
+
+.card .btn {
+  background-color: #febd69;
+  border: none;
+  color: #111;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #f90;
+  color: #000;
+}
+
+/* Reviews */
+.card p.fst-italic {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Stars */
+.card p.fw-bold {
+  color: #f4b400;
+}
+/* Popular Destinations Cards - Dark Style */
+.card {
+  background-color: #000;      /* Black background */
+  color: #000;                 /* White text */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 2px solid ; /* small separation */
+}
+
+.card-body h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0e0505; /* keep white for titles */
+}
+
+.card-body p {
+  font-size: 14px;
+  color: #140303; /* softer white for description */
+}

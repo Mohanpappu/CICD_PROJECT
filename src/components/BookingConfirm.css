@@ -1,0 +1,47 @@
+.confirm-page {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background: #f2f2f2;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.confirm-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  width: 700px;
+}
+
+.confirm-card h2 {
+  color: #FF9900;
+  margin-bottom: 20px;
+}
+
+.confirm-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.confirm-card table th,
+.confirm-card table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.print-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #FF9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.print-btn:hover {
+  background: #FF6600;
+}

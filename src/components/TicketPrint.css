@@ -1,0 +1,51 @@
+.ticket-page {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background: #f7f7f7;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ticket-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  width: 700px;
+}
+
+.ticket-card h1 {
+  color: #FF9900;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ticket-card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.ticket-card table th,
+.ticket-card table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.print-ticket-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #FF9900;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.print-ticket-btn:hover {
+  background: #FF6600;
+}

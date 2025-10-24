@@ -1,0 +1,169 @@
+/* Background */
+.viewcolour {
+  background-color: #f3f3f3; /* Amazon-like light gray */
+  min-height: 100vh;
+  padding: 20px 0;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  color: #111;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Navbar placeholder */
+.navbar {
+  background-color: #131921;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Dates row */
+.dates-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+}
+.date-card {
+  background: #fff;
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  white-space: nowrap;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.date-card:hover {
+  border-color: #e77600;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.few-seats {
+  color: #b12704; /* Amazon red (for offers/seats left) */
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.filters label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* Free cancellation box */
+.free-cancel {
+  background: #fff;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.free-cancel h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #111;
+}
+.free-cancel p {
+  font-size: 14px;
+  color: #565959;
+}
+
+/* Train card */
+.train-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  transition: 0.2s ease;
+}
+.train-card:hover {
+  border-color: #e77600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.train-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.train-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111;
+}
+.train-header p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #565959;
+}
+.train-header small {
+  font-size: 12px;
+  color: #767676;
+}
+.rating {
+  background: #ffd814; /* Amazon yellow */
+  color: #111;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Train classes */
+.train-classes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.class-card {
+  flex: 1 1 150px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.2s ease;
+}
+.class-card:hover {
+  border-color: #e77600;
+  background: #fff;
+}
+.class-type {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.status {
+  color: #b12704;
+  font-weight: 600;
+  font-size: 13px;
+}
+.price {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 6px 0;
+  color: #111;
+}
+.chance {
+  font-size: 12px;
+  color: #565959;
+}

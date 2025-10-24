@@ -1,0 +1,236 @@
+/* === General Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.help-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #111;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* === Hero Section === */
+.help-hero {
+  background: linear-gradient(to right, #0f1111, #232f3e); /* Black → Amazon dark gray */
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 3px solid #ff9900; /* Amazon orange accent */
+}
+
+.help-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.help-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.search-bar {
+  width: 80%;
+  max-width: 500px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* === Quick Links === */
+.quick-links {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.quick-links h2 {
+  font-size: 2rem;
+  color: #131921;
+  margin-bottom: 30px;
+}
+
+.link-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.link-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-6px);
+}
+
+.link-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #131921;
+}
+
+.link-card p {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff9900;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.btn-link:hover {
+  background-color: #e68a00;
+}
+
+/* === FAQs === */
+.faq-section {
+  padding: 40px 20px;
+  background-color: #f3f3f3;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #131921;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease;
+}
+
+.faq-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #131921;
+}
+
+.faq-item p {
+  display: none;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.faq-item.active {
+  background: #fff8f0;
+  border-left: 4px solid #ff9900;
+}
+
+.faq-item.active p {
+  display: block;
+  margin-top: 8px;
+}
+
+/* === Guides === */
+.guide-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.guide-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #131921;
+}
+
+.guide-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.guide-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-6px);
+}
+
+.guide-card h3 {
+  margin-bottom: 12px;
+  color: #131921;
+}
+
+.guide-card p {
+  font-size: 0.95rem;
+  margin-bottom: 14px;
+  color: #444;
+}
+
+.guide-btn {
+  background: #ff9900;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.guide-btn:hover {
+  background: #e68a00;
+}
+
+/* === Chat Section === */
+.chat-section {
+  padding: 40px 20px;
+  text-align: center;
+  background: #131921;
+  color: #fff;
+}
+
+.chat-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.chat-btn {
+  background: #ff9900;
+  color: #221717;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.chat-btn:hover {
+  background: #e68a00;
+}

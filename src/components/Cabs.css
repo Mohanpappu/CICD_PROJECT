@@ -1,0 +1,93 @@
+.cabs-section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Search Box */
+.cab-search {
+  background: #232f3e; /* Amazon dark */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.cab-search h2 {
+  margin-bottom: 15px;
+}
+.cab-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+.cab-form input,
+.cab-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.search-btn {
+  background: #ff9900; /* Amazon orange */
+  color: #111;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.search-btn:hover {
+  background: #e68a00;
+}
+
+/* Offers */
+.cab-offers {
+  margin-bottom: 25px;
+}
+.offer-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+.offer-card {
+  background: #fff3e0;
+  border: 1px solid #ffcc80;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  transition: 0.3s;
+}
+.offer-card:hover {
+  background: #ffe0b2;
+}
+
+/* Why Choose Us */
+.cab-why {
+  margin-bottom: 25px;
+}
+.cab-why ul {
+  list-style: none;
+  padding: 0;
+}
+.cab-why li {
+  margin: 8px 0;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+/* Routes */
+.cab-routes {
+  margin-bottom: 25px;
+}
+.route-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.route-list span {
+  background: #f3f3f3;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}

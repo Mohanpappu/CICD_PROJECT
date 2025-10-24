@@ -1,0 +1,6 @@
+.seat-page { max-width: 800px; margin: auto; padding: 20px; font-family: 'Segoe UI', sans-serif; }
+.seats-grid { display: grid; grid-template-columns: repeat(4, 60px); gap: 10px; justify-content: center; margin: 20px 0; }
+.seat { padding: 10px; border-radius: 5px; border: 1px solid #ccc; cursor: pointer; }
+.seat.selected { background: #FF9900; color: white; }
+.primary-btn { padding: 10px 20px; background: #FF9900; color: white; border: none; border-radius: 5px; cursor: pointer; }
+.primary-btn:hover { background: #FF6600; }

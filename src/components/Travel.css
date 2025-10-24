@@ -1,0 +1,163 @@
+/* Top Banner */
+.header-banner {
+  background: #f3f3f3;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Navbar */
+.travel-navbar {
+  background-color: #131921; /* Amazon dark */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.brand-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff9900; /* Amazon orange */
+}
+
+.nav-link.active {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+/* Booking card (left aligned buttons) */
+.booking-card {
+  display: flex;
+  flex-direction: row;   /* Place buttons in a row */
+  justify-content: flex-start; /* Align to the left */
+  gap: 15px; /* Space between buttons */
+  padding: 15px 20px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+  width: fit-content; /* Shrink to fit buttons */
+}
+
+.tab-item {
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-item:hover {
+  background: #f3f3f3;
+}
+
+.tab-item.active {
+  background: #ff9900; /* Amazon orange */
+  color: #fff;
+}
+
+/* Section Styling */
+.section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-btn {
+  background: orange;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+/* Banner */
+.banner {
+  background: #e8f7e9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Explore Options */
+.explore .options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+/* Why Book */
+.why-book ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-book li {
+  margin: 6px 0;
+}
+
+/* Offers */
+.offers .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  background: #fce9e9;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+}
+
+/* Partners */
+.partners .logos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}

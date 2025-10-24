@@ -1,0 +1,385 @@
+:root {
+  --primary-orange: #ff6a00;
+  --text-dark: #333333;
+  --text-medium: #555555;
+  --text-light: #888888;
+  --background-light: #fdfdfd;
+  --background-muted: #f0f2f5;
+  --border-light: #e0e0e0;
+  --shadow-subtle: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  --border-radius-card: 12px;
+  --border-radius-input: 8px;
+  --max-width-content: 1200px;
+}
+
+/* Base Styles */
+.trains-root {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Video Background Styles */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55vh; /* INCREASED VIDEO HEIGHT TO 60% */
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Content Overlay to hold your UI elements */
+.trains-content-overlay {
+  position: relative;
+  z-index: 1;
+  min-height: 55vh; /* MATCH OVERLAY HEIGHT TO NEW VIDEO HEIGHT */
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(214, 213, 213, 0.3);
+  color: #fff;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adjust headings and labels for readability over the video background */
+.trains-content-overlay h3,
+.trains-content-overlay .field-label {
+  color: #fff;
+}
+
+/* Further adjust card backgrounds to be semi-transparent or distinct */
+.train-search-card,
+.offer-card,
+.why-card,
+.partner {
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--text-dark);
+  box-shadow: var(--shadow-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.train-search-card:hover,
+.offer-card:hover,
+.why-card:hover,
+.partner:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+
+/* --- Existing styles follow, and adjustments for the new flow --- */
+
+/* Train Search Card */
+.train-search-card {
+  border-radius: var(--border-radius-card);
+  padding: 30px;
+  margin: 0;
+  max-width: var(--max-width-content);
+  width: 100%;
+}
+
+.train-form .form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 180px;
+}
+
+.field-label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  padding: 12px 15px;
+  border-radius: var(--border-radius-input);
+  border: 1px solid var(--border-light);
+  font-size: 15px;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: var(--primary-orange);
+  box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.2);
+}
+
+.field-error {
+  font-size: 12px;
+  color: #e74c3c;
+  margin-top: 5px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  flex-basis: 220px;
+  justify-content: flex-end;
+}
+
+.primary-btn, .book-btn {
+  background: var(--primary-orange);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: var(--border-radius-input);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.primary-btn:hover:not(:disabled), .book-btn:hover {
+  background-color: #e65c00;
+  transform: translateY(-1px);
+}
+
+.primary-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.link-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-medium);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 15px;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.link-btn:hover {
+  color: var(--primary-orange);
+}
+
+/* Sections below the hero video */
+.train-offers,
+.train-why,
+.train-partners {
+  max-width: var(--max-width-content);
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+/* Offers Section */
+.train-offers h3,
+.train-why h3,
+.train-partners h3 {
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.offers-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 15px 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: center;
+}
+
+.offers-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.offer-card {
+  min-width: 220px;
+  border-radius: var(--border-radius-card);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+
+.offer-badge {
+  background: var(--primary-orange);
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.offer-card p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+/* Why Choose Us Section */
+.train-why {
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 25px;
+}
+
+.why-card {
+  padding: 20px;
+  border-radius: var(--border-radius-card);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Railway Partners Section */
+.train-partners {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.partner {
+  padding: 12px 35px;
+  border-radius: var(--border-radius-input);
+  font-weight: 600;
+  color: var(--text-dark);
+  white-space: nowrap;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  min-width: 180px;
+}
+
+.partner:hover {
+  transform: translateY(-2px);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .trains-content-overlay {
+      min-height: 55vh; /* Adjusted hero height for tablets */
+  }
+  .video-background {
+      height: 55vh; /* Match video height */
+  }
+
+  .train-form .form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .field {
+    min-width: unset;
+  }
+
+  .actions {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .primary-btn, .link-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .offers-carousel {
+    justify-content: flex-start;
+  }
+
+  .train-search-card {
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trains-content-overlay {
+      padding: 20px 10px;
+      min-height: 70vh; /* Adjusted hero height for mobile */
+  }
+  .video-background {
+      height: 70vh; /* Match video height */
+  }
+
+  .train-search-card {
+    padding: 15px;
+  }
+
+  .field input, .field select,
+  .primary-btn, .book-btn, .link-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .offer-card, .why-card, .partner {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .partner {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .offer-badge {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .offer-card p {
+    font-size: 15px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
